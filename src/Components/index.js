@@ -1,5 +1,5 @@
-import header from "./header";
+import Header from "./Header";
 import Footer from "./Footer";
 import Filter from "./Filter";
 
-export {header, Footer, Filter}
+export {Header, Footer, Filter}
