@@ -2,50 +2,7 @@ import React from 'react'
 
 function Invalid() {
  
-  return <div> 
-    <div>Invalid</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div><div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    <div>LA</div>
-    
+  return <div className='invalid'>   
   </div>
 }
 
