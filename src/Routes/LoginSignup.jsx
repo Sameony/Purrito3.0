@@ -19,10 +19,16 @@ const LoginSignup = () => {
     if(loginForm.username==="Sahil" && loginForm.password==="1234")
     {
       sessionStorage.setItem("username",loginForm.username)
+      setTimeout(() => {
+        navigate(0)
+      }, 1000);
     }
     else if(loginForm.username==="Patient" && loginForm.password==="1234")
     {
       sessionStorage.setItem("username",loginForm.username)
+      setTimeout(() => {
+        navigate(0)
+      }, 1000);
     }
     else
     {
