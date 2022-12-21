@@ -100,7 +100,7 @@ function LandingPage() {
                 setActiveRewards(false);
               }}
             >
-              History
+              My rewards
             </div>
           </div>
           {activerewards ? (
