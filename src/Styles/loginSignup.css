@@ -23,20 +23,20 @@
 
 html,
 body {
-  height: 100vh;
+  /* height: calc(100vh - 7rem); */
   overflow: hidden;
 }
 
 .container {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 7rem);
   overflow: hidden;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: calc(100vh - 6.5rem);
 }
 
 .col {
@@ -62,8 +62,8 @@ body {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(0);
-  transition: 0.5s ease-in-out;
-  transition-delay: 1s;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.4s;
 }
 
 .input-group {
@@ -124,7 +124,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(0);
   transition: 0.5s ease-in-out;
-  transition-delay: 1.2s;
+  transition-delay: 0.4s;
 }
 
 .social-list > div {
@@ -139,19 +139,19 @@ body {
 }
 
 .social-list > div:nth-child(1) {
-  transition-delay: 1.4s;
+  transition-delay: 1s;
 }
 
 .social-list > div:nth-child(2) {
-  transition-delay: 1.6s;
+  transition-delay: 1.2s;
 }
 
 .social-list > div:nth-child(3) {
-  transition-delay: 1.8s;
+  transition-delay: 1.4s;
 }
 
 .social-list > div:nth-child(4) {
-  transition-delay: 2s;
+  transition-delay: 6s;
 }
 
 .social-list > div > i {
@@ -257,7 +257,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: calc(100vh - 7rem);
   width: 300vw;
   transform: translate(35%, 0);
   background-image: linear-gradient(
@@ -288,7 +288,7 @@ body {
   .container::before,
   .container.sign-in::before,
   .container.sign-up::before {
-    height: 100vh;
+    height: calc(100vh - 7rem);
     border-bottom-right-radius: 0;
     border-top-left-radius: 0;
     z-index: 0;

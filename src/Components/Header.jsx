@@ -23,7 +23,7 @@ function Header() {
   return (
       <nav className={offset>0?"navBar headerShadow":"navBar"} style={{padding:"0.7rem 0"}}>
         <Link to="/" style={{flex: "0 1 auto", textAlign:"right", display:"flex", alignItems:"center"}}>
-          <h1 className="brandName">Weave</h1>
+          <h1 className="brandName">Credezy</h1>
           <img src={logo} style={{height:"5rem"}} alt="logo" />
         </Link>
         <ul className="centerDiv" style={width<839?{display:"none"}:{display:"flex", justifyContent:"space-around"}}>
