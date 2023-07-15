@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #1e88e5;
-  --secondary-color: #167edc;
+  --primary-color: #b2157e;
+  --secondary-color: #a10f70;
   --black: #000000;
   --white: #ffffff;
   --gray: #efefef;
@@ -29,14 +29,14 @@ body {
 
 .container {
   position: relative;
-  min-height: calc(100vh - 7rem);
+  min-height: calc(100vh - 6rem);
   overflow: hidden;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  height: calc(100vh - 6.5rem);
+  height: calc(100vh - 6rem);
 }
 
 .col {
@@ -257,7 +257,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 6rem);
   width: 300vw;
   transform: translate(35%, 0);
   background-image: linear-gradient(
