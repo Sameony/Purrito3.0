@@ -8,13 +8,13 @@ const LoginSignup = () => {
     username:"",
     password:""
   })
-  useEffect(() => {
-    if(sessionStorage.getItem("username"))
-    {
-      navigate("/")
-    }
-   setToggle(false)
-  }, [])
+  // useEffect(() => {
+  //   if(sessionStorage.getItem("username"))
+  //   {
+  //     navigate("/")
+  //   }
+  //  setToggle(false)
+  // }, [])
   const loginHandler = () =>{
     if(loginForm.username==="Sahil" && loginForm.password==="1234")
     {

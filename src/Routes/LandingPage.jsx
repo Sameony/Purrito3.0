@@ -29,7 +29,8 @@ function LandingPage({deviceType}) {
     },
   };
   return (
-    <Carousel
+    <>
+      <Carousel
       swipeable={true}
       draggable={false}
       showDots={true}
@@ -60,6 +61,8 @@ function LandingPage({deviceType}) {
         <img className="imageFit" src="images/kyotPeek.jpg" alt="cat" />
       </div>
     </Carousel>
+    <div style={{height:"10rem", width:"90vw"}}></div>
+    </>
   );
 }
 

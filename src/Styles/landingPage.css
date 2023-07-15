@@ -7,7 +7,7 @@
   grid-template-rows: 1fr 1fr;
 }
 .bannerImgWrapper {
-  width: 100dvw;
+  width: 99dvw;
   height: calc(100dvh - 5rem);
   overflow: hidden;
 }
@@ -16,6 +16,7 @@
   height: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 #square {
   pointer-events: none;
