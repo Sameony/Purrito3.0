@@ -9,7 +9,10 @@
 .bannerImgWrapper {
   width: 99dvw;
   height: calc(100dvh - 15rem);
-  /* overflow: hidden; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .imageFit {
   width: 100%;
@@ -18,8 +21,21 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
+.carousel-container {
+  margin-left: 00.5vw;
+}
 .carousel-indicators {
   bottom: 3%;
+}
+.react-multi-carousel-dot--active button {
+  background-color: #b2157e !important;
+}
+.react-multi-carousel-dot--active button,
+.react-multi-carousel-dot button {
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 4px var(#e0e0e0), 0px 0px 2px 2px var(#e0e0e0);
+  width: 20px !important;
+  height: 20px !important;
 }
 .carousel-indicators [data-bs-target] {
   background-color: #dfd6d6;

@@ -42,24 +42,15 @@ function LandingPage({deviceType}) {
       keyBoardControl={true}
       customTransition="transform 700ms ease-out"
       containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
+      removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
       deviceType={deviceType}
       dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
       itemAriaLabel="as"
     >
-      <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotPeek.jpg" alt="cat" />
-      </div>
-      <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotAsleep.jpg" alt="cat" />
-      </div>
-      <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/majestic.jpg" alt="cat" />
-      </div>
-      <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotPeek3.jpg" alt="cat" />
-      </div>
+      <div className="bannerImgWrapper" style={{backgroundImage: `linear-gradient(rgba(139, 139, 139, 0.5),rgba(0, 0, 0, 0.5)),url(${"images/kyotPeek.jpg"})`}}/>
+      <div className="bannerImgWrapper" style={{backgroundImage: `linear-gradient(rgba(139, 139, 139, 0.5),rgba(0, 0, 0, 0.5)),url(${"images/kyotAsleep.jpg"})`}}/>
+      <div className="bannerImgWrapper" style={{backgroundImage: `linear-gradient(rgba(139, 139, 139, 0.5),rgba(0, 0, 0, 0.5)),url(${"images/majestic.jpg"})`}}/>
+      <div className="bannerImgWrapper" style={{backgroundImage: `linear-gradient(rgba(139, 139, 139, 0.5),rgba(0, 0, 0, 0.5)),url(${"images/kyotPeek3.jpg"})`}}/>
     </Carousel>
     <div style={{height:"10rem", width:"90vw"}}></div>
     </>
