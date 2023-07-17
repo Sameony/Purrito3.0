@@ -6,10 +6,10 @@ import { useWindowDimensions } from "../Utils";
 function Header() {
   const { height, width } = useWindowDimensions();
   const [offset, setOffset] = useState(0);
-  const [username, setUsername] = useState("");
+  // const [username, setUsername] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
-      setUsername(sessionStorage.getItem("username"))
+      // setUsername(sessionStorage.getItem("username"))
       const onScroll = () => setOffset(window.pageYOffset);
       // clean up code
       window.removeEventListener('scroll', onScroll);
@@ -21,7 +21,7 @@ function Header() {
     navigate(0)
   }
   return (
-      <nav className={offset>0?"navBar headerShadow":"navBar"} style={{padding:"0.7rem 0"}}>
+      <nav className={offset>0?"navBar headerShadow":"navBar"} style={{}}>
         <Link to="/" style={{flex: "0 1 auto", textAlign:"right", display:"flex", alignItems:"center"}}>
           <h1 className="brandName">Purritos</h1>
           <img src={logo} style={{height:"5rem"}} alt="logo" />
@@ -31,16 +31,7 @@ function Header() {
           <li style={{cursor:"pointer"}}>Contact Sales</li>
           <li style={{cursor:"pointer"}}>Services</li> */}
         </ul>
-        {username?(<div className="rightNav">
-          <div style={{height:"5rem", cursor:"pointer", display:"flex", flexDirection:"column", alignItems:"center"}}>
-            <img src={avatar} style={{height:"100%"}} alt="avatar" />
-            <span style={{color:"white"}}>{username}</span>
-          </div>
-          <Link onClick={logoutHandler} className={offset>0?"btn btn-auth-dark":"btn btn-auth"} style={width<600?{display:"none", margin:"0 1rem"}:{ margin:"0 1rem"}}>
-            Logout
-          </Link>
-          <button className="btn btn-secondaryAuth" style={width>839?{display:"none"}:{}}>=</button>
-        </div>):(<div className="rightNav">
+        <div className="rightNav">
           <Link to="/auth" className={offset>0?"btn btn-auth-dark":"btn btn-auth"} style={width<600?{display:"none"}:{}}>
             Signup
           </Link>
@@ -48,7 +39,7 @@ function Header() {
             Login
           </Link>
           <button className="btn btn-secondaryAuth" style={width>839?{display:"none"}:{}}>=</button>
-        </div>)}
+        </div>
       </nav>
   );
 }
