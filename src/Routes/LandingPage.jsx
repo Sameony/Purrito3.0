@@ -31,16 +31,16 @@ function LandingPage({deviceType}) {
   return (
     <>
       <Carousel
+      pauseOnHover={false}
       swipeable={true}
       draggable={false}
       showDots={true}
       responsive={responsive}
       infinite={true}
       autoPlay={deviceType !== "mobile" ? true : false}
-      autoPlaySpeed={2000}
+      autoPlaySpeed={3500}
       keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
+      customTransition="transform 700ms ease-out"
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       deviceType={deviceType}
