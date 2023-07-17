@@ -49,16 +49,16 @@ function LandingPage({deviceType}) {
       itemAriaLabel="as"
     >
       <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotComfy.jpg" alt="cat" />
+        <img className="imageFit" src="images/kyotPeek.jpg" alt="cat" />
       </div>
       <div className="bannerImgWrapper">
         <img className="imageFit" src="images/kyotAsleep.jpg" alt="cat" />
       </div>
       <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotAsleep2.jpg" alt="cat" />
+        <img className="imageFit" src="images/majestic.jpg" alt="cat" />
       </div>
       <div className="bannerImgWrapper">
-        <img className="imageFit" src="images/kyotPeek.jpg" alt="cat" />
+        <img className="imageFit" src="images/kyotPeek3.jpg" alt="cat" />
       </div>
     </Carousel>
     <div style={{height:"10rem", width:"90vw"}}></div>

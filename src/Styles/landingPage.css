@@ -8,8 +8,8 @@
 }
 .bannerImgWrapper {
   width: 99dvw;
-  height: calc(100dvh - 5rem);
-  overflow: hidden;
+  height: calc(100dvh - 15rem);
+  /* overflow: hidden; */
 }
 .imageFit {
   width: 100%;
@@ -18,16 +18,15 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
-#square {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  border-radius: 0 0 0 80%;
-  right: 0;
-  width: 20rem;
-  height: 14rem;
-  max-width: 40vw;
-  max-height: 25vh;
-  background-image: linear-gradient(var(--primary), var(--lighter-prim));
-  background-color: var(--primary);
+.carousel-indicators {
+  bottom: 3%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #dfd6d6;
+  width: 15px !important;
+  border-radius: 50%;
+  height: 14px !important;
+}
+.carousel-indicators .active {
+  background-color: #000 !important;
 }
