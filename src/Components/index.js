@@ -1,5 +1,3 @@
-import header from "./header";
-import Footer from "./Footer";
-import Filter from "./Filter";
+import Header from "./Header";
 
-export {header, Footer, Filter}
+export {Header}
