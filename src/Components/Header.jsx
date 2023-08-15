@@ -32,13 +32,13 @@ function Header() {
           <li style={{cursor:"pointer"}}>Services</li> */}
         </ul>
         <div className="rightNav">
-          <Link to="/auth" className={offset>0?"btn btn-auth-dark":"btn btn-auth"} style={width<600?{display:"none"}:{}}>
+          <Link to="/auth" className={offset>0?"bttn bttn-auth-dark":"bttn bttn-auth"} style={width<600?{display:"none"}:{}}>
             Signup
           </Link>
-          <Link to="/auth" className={offset>0?"btn btn-secondaryAuth-dark":"btn btn-secondaryAuth"}  style={width<839?{display:"none"}:{}}>
+          <Link to="/auth" className={offset>0?"bttn bttn-secondaryAuth-dark":"bttn bttn-secondaryAuth"}  style={width<839?{display:"none"}:{}}>
             Login
           </Link>
-          <button className="btn btn-secondaryAuth" style={width>839?{display:"none"}:{}}>=</button>
+          <button className="bttn bttn-secondaryAuth" style={width>839?{display:"none"}:{}}>=</button>
         </div>
       </nav>
   );

@@ -2,3 +2,7 @@
 @import url("colors.css");
 @import url("landingPage.css");
 @import url("loginSignup.css");
+
+a {
+  text-decoration: none;
+}
